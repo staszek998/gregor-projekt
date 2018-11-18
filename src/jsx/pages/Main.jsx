@@ -1,7 +1,7 @@
 import React from "react";
 
 import HeroSlider from "../components/page-specific/main/HeroSlider/HeroSlider";
-import TailoredProjects from "../components/page-specific/main/TailoredProjects/TailoredProjects";
+import ComplexEngineering from "../components/page-specific/main/ComplexEngineering/ComplexEngineering";
 
 const Main = () => (
   <main className="page--main">
@@ -11,7 +11,7 @@ const Main = () => (
           <HeroSlider />
         </div>
       </div>
-      <TailoredProjects />
+      <ComplexEngineering />
     </div>
   </main>
 );

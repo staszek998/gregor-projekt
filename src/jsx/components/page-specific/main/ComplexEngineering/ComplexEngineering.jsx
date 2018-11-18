@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./_TailoredProjects.scss";
+import "./_ComplexEngineering.scss";
 
-const TailoredProjects = () => (
-  <div className="row tailored-projects bg-white py-5">
+const ComplexEngineering = () => (
+  <div className="row complex-eingineering bg-white py-5">
     <div className="col-12">
       <h1 className="display-4 text-center">Kompleksowa inżynieria</h1>
 
@@ -57,4 +57,4 @@ const TailoredProjects = () => (
   </div>
 );
 
-export default TailoredProjects;
+export default ComplexEngineering;
