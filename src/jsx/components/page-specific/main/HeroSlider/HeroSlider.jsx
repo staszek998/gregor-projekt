@@ -11,15 +11,11 @@ import img5 from "../../../../../assets/images/page-specific/main/hero-slider/5.
 const HeroSlider = () => (
   <div id="hero-slider" className="carousel slide" data-ride="carousel">
     <ol className="carousel-indicators">
-      <li
-        data-target="#hero-slider__indicators"
-        data-slide-to="0"
-        className="active"
-      />
-      <li data-target="#hero-slider__indicators" data-slide-to="1" />
-      <li data-target="#hero-slider__indicators" data-slide-to="2" />
-      <li data-target="#hero-slider__indicators" data-slide-to="3" />
-      <li data-target="#hero-slider__indicators" data-slide-to="4" />
+      <li data-target="#hero-slider" data-slide-to="0" className="active" />
+      <li data-target="#hero-slider" data-slide-to="1" />
+      <li data-target="#hero-slider" data-slide-to="2" />
+      <li data-target="#hero-slider" data-slide-to="3" />
+      <li data-target="#hero-slider" data-slide-to="4" />
     </ol>
     <div className="carousel-inner">
       <div className="carousel-item active">
@@ -83,24 +79,6 @@ const HeroSlider = () => (
         </div>
       </div>
     </div>
-    <a
-      className="carousel-control-prev"
-      href="#hero-slider"
-      role="button"
-      data-slide="prev"
-    >
-      <span className="carousel-control-prev-icon" aria-hidden="true" />
-      <span className="sr-only">Previous</span>
-    </a>
-    <a
-      className="carousel-control-next"
-      href="#hero-slider"
-      role="button"
-      data-slide="next"
-    >
-      <span className="carousel-control-next-icon" aria-hidden="true" />
-      <span className="sr-only">Next</span>
-    </a>
   </div>
 );
 
