@@ -6,8 +6,9 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
-// Colors pallette
+// Configuration
 @import "./scss/config/colors";
+@import "./scss/config/fonts";
 
 // Base styles
 @import "./scss/base";
