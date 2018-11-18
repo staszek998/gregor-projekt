@@ -1,7 +1,9 @@
-/*
-    This stylesheet is only used to import other SCSS files.
-*/
+// This stylesheet is only used to import other SCSS files.
 
+// CSS reset
+@import "./helpers/scss/reset";
+
+// Bootstrap
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
