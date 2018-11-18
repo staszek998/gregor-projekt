@@ -18,6 +18,8 @@
 
       .carousel-caption {
         background-color: rgba($color: $customBlack, $alpha: 0.8);
+        padding-left: 1rem;
+        padding-right: 1rem;
 
         * {
           color: $customWhite;
