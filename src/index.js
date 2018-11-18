@@ -3,7 +3,7 @@
 import $ from "jquery";
 // eslint-disable-next-line
 import Popper from "popper.js";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // React dependencies:
 import React from "react";

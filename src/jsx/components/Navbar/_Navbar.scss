@@ -1,0 +1,28 @@
+@import "../../../scss/config/colors";
+
+.navbar {
+  background-color: $customBrown;
+
+  * {
+    color: $customWhite;
+  }
+
+  a {
+    transition: 300ms all ease;
+
+    @media (min-width: 992px) {
+      max-height: 40px;
+      overflow: hidden;
+    }
+
+    &:hover {
+      color: $customWhite;
+
+      &.nav-link {
+        @media (min-width: 992px) {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

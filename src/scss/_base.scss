@@ -1,0 +1,11 @@
+@import "./config/colors";
+
+html,
+body {
+  background-color: $customWhite;
+}
+
+* {
+  color: $customBlack;
+  box-sizing: border-box;
+}

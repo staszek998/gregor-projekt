@@ -1,7 +1,13 @@
 // This stylesheet is only used to import other SCSS files.
 
 // CSS reset
-@import "./helpers/scss/reset";
+@import "./scss/helpers/reset";
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
+
+// Colors pallette
+@import "./scss/config/colors";
+
+// Base styles
+@import "./scss/base";
