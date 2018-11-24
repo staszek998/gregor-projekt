@@ -7,7 +7,7 @@ const Supervision = () => (
   <div className="Supervision row">
     <div className="col-12 col-md-6 py-5 px-md-5 d-flex flex-column justify-content-center">
       <h2 className="text-center h1 mb-4">
-        Zbudowany pod okiem
+        Wybudowany pod okiem
         <br />
         profesjonalisty
       </h2>
