@@ -8,7 +8,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg">
+      <nav className="Navbar navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" href="#">
             GREGOR PROJEKT
