@@ -10,13 +10,6 @@ const PortfolioBrief = () => (
     </div>
 
     <Item />
-    <Item />
-    <Item />
-    <Item />
-    <Item />
-    <Item />
-    <Item />
-    <Item />
   </div>
 );
 
