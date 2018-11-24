@@ -4,6 +4,7 @@ import $ from "jquery";
 // eslint-disable-next-line
 import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "hamburgers/dist/hamburgers.min.css";
 
 // React dependencies:
 import React from "react";
