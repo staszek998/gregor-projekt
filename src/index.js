@@ -4,7 +4,12 @@ import $ from "jquery";
 // eslint-disable-next-line
 import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+// Hamburger menu buttons
 import "hamburgers/dist/hamburgers.min.css";
+
+// Font
+import "../src/assets/fonts/architecture-and-construction/flaticon.css";
 
 // React dependencies:
 import React from "react";
