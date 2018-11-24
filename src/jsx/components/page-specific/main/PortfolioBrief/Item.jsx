@@ -6,21 +6,19 @@ import "../../../../../vendor/tilter/css/normalize.css";
 import "../../../../../vendor/tilter/css/component.css";
 import "../../../../../vendor/tilter/js/main.js";
 
-import testImg from "../../../../../assets/images/page-specific/main/portfolio-brief/house-1.jpg";
-
 class Item extends Component {
   render() {
     return (
-      <div className="Item col-6 col-md-4 col-lg-3">
+      <div className="Item col-12 col-md-6 mb-5">
         <a href="#" className="tilter tilter--1" ref="_tilter">
           <figure className="tilter__figure">
-            <img className="tilter__image" src={testImg} alt="" />
+            <img className="tilter__image" src={this.props.imgSrc} alt="" />
             <div className="tilter__deco tilter__deco--shine">
               <div />
             </div>
             <figcaption className="tilter__caption">
-              <h3 className="tilter__title">Tanya Bondesta</h3>
-              <p className="tilter__description">Toronto</p>
+              <h3 className="tilter__title">{this.props.heading}</h3>
+              <p className="tilter__description">{this.props.subheading}</p>
             </figcaption>
             <svg
               className="tilter__deco tilter__deco--lines"
