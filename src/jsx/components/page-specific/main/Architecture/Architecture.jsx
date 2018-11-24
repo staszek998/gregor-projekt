@@ -6,7 +6,7 @@ import "./_Architecture.scss";
 const Architecture = () => (
   <div className="Architecture row">
     <div className="col-12 col-md-6 py-5 px-md-5 d-flex flex-column justify-content-center">
-      <h2 className="text-center h1">Architektura</h2>
+      <h2 className="text-center h1">Piękny dom</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
         pariatur sit vero esse qui rem a dolore voluptates et, architecto
