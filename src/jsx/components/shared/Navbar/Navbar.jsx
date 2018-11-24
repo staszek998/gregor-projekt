@@ -8,7 +8,7 @@ const Navbar = () => (
         GREGOR PROJEKT
       </a>
       <button
-        className="navbar-toggler"
+        className="navbar-toggler hamburger hamburger--minus"
         type="button"
         data-toggle="collapse"
         data-target="#navbar-links"
@@ -16,7 +16,9 @@ const Navbar = () => (
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon" />
+        <span class="hamburger-box">
+          <span class="hamburger-inner" />
+        </span>
       </button>
 
       <div className="collapse navbar-collapse" id="navbar-links">
