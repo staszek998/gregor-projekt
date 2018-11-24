@@ -5,6 +5,7 @@ import ComplexEngineering from "../components/page-specific/main/ComplexEngineer
 import Architecture from "../components/page-specific/main/Architecture/Architecture";
 import Project from "../components/page-specific/main/Project/Project";
 import Supervision from "../components/page-specific/main/Supervision/Supervision";
+import PortfolioBrief from "../components/page-specific/main/PortfolioBrief/PortfolioBrief";
 
 const Main = () => (
   <main className="page--main">
@@ -18,6 +19,7 @@ const Main = () => (
       <Architecture />
       <Project />
       <Supervision />
+      <PortfolioBrief />
     </div>
   </main>
 );

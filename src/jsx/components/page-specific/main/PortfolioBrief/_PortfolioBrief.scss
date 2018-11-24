@@ -2,4 +2,9 @@
 
 .PortfolioBrief {
   background-color: white;
+  color: $customBlack;
+
+  * {
+    color: $customBlack;
+  }
 }
