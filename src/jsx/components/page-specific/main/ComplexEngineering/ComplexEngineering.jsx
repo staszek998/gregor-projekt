@@ -29,7 +29,7 @@ const ComplexEngineering = () => (
     <div className="col-12">
       <h1 className="display-4 text-center mb-5">Kompleksowa inżynieria</h1>
 
-      <div className="row">
+      <div className="row pt-4 pt-md-0">
         <Column {...data.column1} />
         <Column {...data.column2} />
         <Column {...data.column3} />
