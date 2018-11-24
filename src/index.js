@@ -8,8 +8,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 // Hamburger menu buttons
 import "hamburgers/dist/hamburgers.min.css";
 
-// Font
+// Fonts
 import "../src/assets/fonts/architecture-and-construction/flaticon.css";
+import "../src/assets/fonts/construction/flaticon.css";
 
 // React dependencies:
 import React from "react";
