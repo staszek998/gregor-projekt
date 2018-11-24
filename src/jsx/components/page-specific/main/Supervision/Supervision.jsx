@@ -22,7 +22,7 @@ const Supervision = () => (
         quisquam natus cum? Odio, voluptates quo laborum expedita ut ex?
       </p>
     </div>
-    <div className="col-12 col-md-6 px-0 pt-0 pb-5 p-md-0">
+    <div className="col-12 col-md-6 p-0">
       <img src={img} alt="" />
     </div>
   </div>
