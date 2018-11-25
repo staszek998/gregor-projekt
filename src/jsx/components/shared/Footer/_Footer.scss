@@ -1,0 +1,30 @@
+@import "../../../../scss/config/colors";
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+
+  * {
+    background-color: $customBrown;
+    color: transparent;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    background-clip: text;
+  }
+
+  i {
+    font-size: 20px;
+    margin-bottom: 15px;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  a:hover {
+    color: transparent;
+    text-decoration: none;
+  }
+}

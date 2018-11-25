@@ -1,0 +1,19 @@
+.Main {
+  margin-bottom: 280px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 160px;
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: 200px;
+  }
+
+  > .container {
+    > .row {
+      &:last-child {
+        box-shadow: 0 14px 22px 0px gray;
+      }
+    }
+  }
+}
