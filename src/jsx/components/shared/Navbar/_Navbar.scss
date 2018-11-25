@@ -1,0 +1,63 @@
+@import "../../../../scss/config/colors";
+
+.Navbar {
+  background-color: $customBrown;
+
+  @media (min-width: 992px) {
+    max-height: 60px;
+    overflow: hidden;
+  }
+
+  * {
+    color: white;
+  }
+
+  .hamburger {
+    height: 20px;
+    width: 30px;
+    padding: 0;
+    outline: none;
+
+    * {
+      width: 30px;
+    }
+
+    &-box {
+      height: 20px;
+    }
+
+    &-inner {
+      background-color: $customWhite !important;
+      height: 2px;
+      border-radius: 0;
+
+      &::before,
+      &::after {
+        background-color: $customWhite !important;
+        width: 30px;
+        height: 2px;
+        border-radius: 0;
+      }
+
+      &::before {
+        top: -8px;
+      }
+
+      &::after {
+        bottom: -8px;
+      }
+    }
+  }
+
+  a {
+    &.navbar-brand {
+      @media (min-width: 992px) {
+        font-size: 2rem;
+      }
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
