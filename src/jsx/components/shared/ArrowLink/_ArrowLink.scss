@@ -1,128 +1,136 @@
-@import '../../../../scss/config/colors';
+@import "../../../../scss/config/colors";
 
 .ArrowLink {
-    // Variables
-    $text-arrow-space: 16px;
-    $shaft-width: 1px;
-    $newshaft-width: 64px;
-    $shaft-thickness: 1px;
-    $arrow-head-width: 8px;
-    $arrow-head-thickness: $shaft-thickness;
+  // Variables
+  $text-arrow-space: 16px;
+  $shaft-width: 1px;
+  $newshaft-width: 64px;
+  $shaft-thickness: 1px;
+  $arrow-head-width: 8px;
+  $arrow-head-thickness: $shaft-thickness;
 
-    // The Arrow
-    .the-arrow {
-      width: $shaft-width;
-      transition: all 0.2s;
+  // The Arrow
+  .the-arrow {
+    width: $shaft-width;
+    transition: all 0.2s;
 
-      &.-left {
-        position: absolute;
-        top: 60%;
-        left: 0;
+    &.-left {
+      position: absolute;
+      top: 60%;
+      left: 0;
 
-        > .shaft {
+      > .shaft {
+        width: 0;
+        background-color: $customBlack;
+
+        &:before,
+        &:after {
           width: 0;
+          background-color: $customBlack;
+        }
+
+        &:before {
+          transform: rotate(0);
+        }
+
+        &:after {
+          transform: rotate(0);
+        }
+      }
+    }
+
+    > .shaft {
+      background-color: $customBlack;
+      display: block;
+      height: $shaft-thickness;
+      position: relative;
+      transition: all 0.2s;
+      transition-delay: 0;
+      will-change: transform;
+
+      &:before,
+      &:after {
+        background-color: $customBlack;
+        content: "";
+        display: block;
+        height: $arrow-head-thickness;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.2s;
+        transition-delay: 0;
+      }
+
+      &:before {
+        transform-origin: top right;
+      }
+
+      &:after {
+        transform-origin: bottom right;
+      }
+    }
+  }
+
+  // Animated Arrow Button
+  &.animated-arrow {
+    display: inline-block;
+    color: $customBlack;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $customBlack;
+
+      > .the-arrow.-left {
+        > .shaft {
+          width: $newshaft-width;
+          transition-delay: 0.1s;
           background-color: $customBlack;
 
           &:before,
           &:after {
-            width: 0;
+            width: $arrow-head-width;
+            transition-delay: 0.1s;
             background-color: $customBlack;
           }
 
           &:before {
-            transform: rotate(0);
+            transform: rotate(40deg);
           }
 
           &:after {
-            transform: rotate(0);
+            transform: rotate(-40deg);
           }
-        }
-      }
-
-      > .shaft {
-        background-color: $customBlack;
-        display: block;
-        height: $shaft-thickness;
-        position: relative;
-        transition: all 0.2s;
-        transition-delay: 0;
-        will-change: transform;
-
-        &:before,
-        &:after {
-          background-color: $customBlack;
-          content: "";
-          display: block;
-          height: $arrow-head-thickness;
-          position: absolute;
-          top: 0;
-          right: 0;
-          transition: all 0.2s;
-          transition-delay: 0;
-        }
-
-        &:before {
-          transform-origin: top right;
-        }
-
-        &:after {
-          transform-origin: bottom right;
-        }
-      }
-    }
-
-    // Animated Arrow Button
-    &.animated-arrow {
-      display: inline-block;
-      color: $customBlack;
-      text-decoration: none;
-      position: relative;
-      transition: all 0.2s;
-
-      &:hover {
-        color: $customBlack;
-
-        > .the-arrow.-left {
-          > .shaft {
-            width: $newshaft-width;
-            transition-delay: 0.1s;
-            background-color: $customBlack;
-
-            &:before,
-            &:after {
-              width: $arrow-head-width;
-              transition-delay: 0.1s;
-              background-color: $customBlack;
-            }
-
-            &:before {
-              transform: rotate(40deg);
-            }
-
-            &:after {
-              transform: rotate(-40deg);
-            }
-          }
-        }
-
-        > .main {
-          transform: translateX($shaft-width + $text-arrow-space);
-          transform: translateX($newshaft-width + $text-arrow-space);
         }
       }
 
       > .main {
-        display: flex;
-        align-items: center;
-        transition: all 0.2s;
+        transform: translateX($shaft-width + $text-arrow-space);
+        transform: translateX($newshaft-width + $text-arrow-space);
+      }
+    }
 
-        > .text {
-          line-height: 1;
-        }
+    > .main {
+      display: flex;
+      align-items: center;
+      transition: all 0.2s;
 
-        > .the-arrow {
-          position: relative;
-        }
+      > .text {
+        line-height: 1;
+      }
+
+      > .the-arrow {
+        position: relative;
       }
     }
   }
+
+  &.white {
+    .shaft,
+    .shaft::before,
+    .shaft::after {
+      background-color: white !important;
+    }
+  }
+}
