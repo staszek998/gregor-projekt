@@ -1,26 +1,25 @@
 import React from "react";
 
 import "./_Footer.scss";
+import ArrowLink from "../ArrowLink/ArrowLink";
 
 const Footer = () => (
   <footer className="Footer container pb-4">
-    <div className="row text-center justify-content-center">
-      <div className="col-12">
+    <div className="row justify-content-center">
+      <div className="col-12 text-center">
         <h2 className="h1 my-4">GREGOR PROJEKT</h2>
       </div>
-      <div className="mb-3 mb-md-0 col-12 col-md-4 col-lg-3 d-flex flex-column justify-content-center">
+      <div className="mb-3 mb-md-0 col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
         <i className="fas fa-envelope" />
-        <a href="mailto:gregor.projekt@gmail.com">gregor.projekt@gmail.com</a>
+        <ArrowLink text="gregor.projekt@gmail.com" />
       </div>
-      <div className="mb-3 mb-md-0 col-12 col-md-4 col-lg-3 d-flex flex-column justify-content-center">
+      <div className="mb-3 mb-md-0 col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
         <i className="fas fa-map-marked-alt" />
-        <a href="https://goo.gl/maps/uhKZbvq5W642" className="m-0">
-          Dychów 11a
-        </a>
+        <ArrowLink text="Dychów 11a" />
       </div>
-      <div className="mb-3 mb-md-0 col-12 col-md-4 col-lg-3 d-flex flex-column justify-content-center">
+      <div className="mb-3 mb-md-0 col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
         <i className="fas fa-mobile-alt" />
-        <a href="tel:+48 781 975 206">48 781 975 206</a>
+        <ArrowLink text="+48 781 975 206" />
       </div>
     </div>
   </footer>
