@@ -6,6 +6,7 @@ import Architecture from "../components/page-specific/main/Architecture/Architec
 import Project from "../components/page-specific/main/Project/Project";
 import Supervision from "../components/page-specific/main/Supervision/Supervision";
 import PortfolioBrief from "../components/page-specific/main/PortfolioBrief/PortfolioBrief";
+import Shortcuts from "../components/page-specific/main/Shortcuts/Shortcuts";
 
 const Main = () => (
   <main className="page--main">
@@ -20,6 +21,7 @@ const Main = () => (
       <Project />
       <Supervision />
       <PortfolioBrief />
+      <Shortcuts />
     </div>
   </main>
 );

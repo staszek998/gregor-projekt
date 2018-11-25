@@ -2,6 +2,7 @@ import React from "react";
 
 import "./_PortfolioBrief.scss";
 import Item from "./Item";
+import ArrowLink from "../../../shared/ArrowLink/ArrowLink";
 
 import img1 from "../../../../../assets/images/page-specific/main/portfolio-brief/house-1.jpg";
 import img2 from "../../../../../assets/images/page-specific/main/portfolio-brief/house-2.jpg";
@@ -36,14 +37,7 @@ const PortfolioBrief = () => (
     />
 
     <div className="col-12 text-center">
-      <a className="h4 cta animated-arrow" href="#">
-        <span className="the-arrow -left">
-          <span className="shaft" />
-        </span>
-        <span className="main">
-          <span className="text">Zobacz więcej realizacji</span>
-        </span>
-      </a>
+      <ArrowLink text="Zobacz więcej realizacji" />
     </div>
   </div>
 );
