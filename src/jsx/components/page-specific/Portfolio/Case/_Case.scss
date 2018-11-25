@@ -1,0 +1,33 @@
+@import "../../../../../scss/config/colors";
+
+.Case {
+  &.--light {
+    background-color: white;
+    * {
+      color: $customBlack;
+    }
+  }
+
+  &.--dark {
+    background-color: $customBlack;
+    * {
+      color: white;
+    }
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: 768px) {
+      .col-12:first-child {
+        order: 2;
+      }
+
+      .col-12:last-child {
+        order: 1;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
