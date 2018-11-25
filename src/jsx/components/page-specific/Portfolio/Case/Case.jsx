@@ -14,6 +14,7 @@ class Case extends Component {
               <h2 className="h3">{this.props.heading}</h2>
               <p>{this.props.body}</p>
               <button
+                className={`arrow-icon mt-3 ${this.state.collapsed ? "" : "open"}`}
                 type="button"
                 data-toggle="collapse"
                 data-target={`#${this.props.collapseId}`}
@@ -25,12 +26,8 @@ class Case extends Component {
                   });
                 }}
               >
-                <span
-                  className={`arrow-icon ${this.state.collapsed ? "" : "open"}`}
-                >
-                  <span className="left-bar" />
-                  <span className="right-bar" />
-                </span>
+                <span className="left-bar" />
+                <span className="right-bar" />
               </button>
             </div>
             <div className="image-container col-12 col-md-6 p-0">
