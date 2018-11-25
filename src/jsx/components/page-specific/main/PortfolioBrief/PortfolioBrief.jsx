@@ -7,8 +7,6 @@ import img1 from "../../../../../assets/images/page-specific/main/portfolio-brie
 import img2 from "../../../../../assets/images/page-specific/main/portfolio-brief/house-2.jpg";
 import img3 from "../../../../../assets/images/page-specific/main/portfolio-brief/house-3.jpg";
 import img4 from "../../../../../assets/images/page-specific/main/portfolio-brief/house-4.jpg";
-import img5 from "../../../../../assets/images/page-specific/main/portfolio-brief/house-5.jpg";
-import img6 from "../../../../../assets/images/page-specific/main/portfolio-brief/house-6.jpg";
 
 const PortfolioBrief = () => (
   <div className="PortfolioBrief row justify-content-around py-5 px-2">
@@ -33,16 +31,6 @@ const PortfolioBrief = () => (
     />
     <Item
       imgSrc={img4}
-      heading="House"
-      subheading="Lorem ipsum dolor sit amet"
-    />
-    <Item
-      imgSrc={img5}
-      heading="House"
-      subheading="Lorem ipsum dolor sit amet"
-    />
-    <Item
-      imgSrc={img6}
       heading="House"
       subheading="Lorem ipsum dolor sit amet"
     />
