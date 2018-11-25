@@ -5,10 +5,12 @@
   $duration: 0.5s;
 
   &.--light {
-    background-color: white;
+    .bg {
+      background-color: white;
 
-    * {
-      color: $customBlack;
+      * {
+        color: $customBlack;
+      }
     }
 
     .left-bar::after {
@@ -20,10 +22,12 @@
   }
 
   &.--dark {
-    background-color: $customBlack;
+    .bg {
+      background-color: $customBlack;
 
-    * {
-      color: white;
+      * {
+        color: white;
+      }
     }
 
     .left-bar::after {
@@ -118,6 +122,21 @@
     .right-bar:after {
       transform-origin: center center;
       transform: rotate(70deg);
+    }
+  }
+
+  .collapse {
+    background-color: $customWhite;
+
+    * {
+      color: $customBlack;
+    }
+
+    img {
+      @media (min-width: 768px) {
+        height: 400px;
+        width: auto;
+      }
     }
   }
 }
