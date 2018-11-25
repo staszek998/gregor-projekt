@@ -50,8 +50,6 @@
   }
 
   a {
-    transition: 300ms all ease;
-
     &.navbar-brand {
       @media (min-width: 992px) {
         font-size: 2rem;
@@ -60,12 +58,6 @@
 
     &:hover {
       color: white;
-
-      &.nav-link {
-        @media (min-width: 992px) {
-          transform: scale(1.2);
-        }
-      }
     }
   }
 }
