@@ -34,6 +34,17 @@ const PortfolioBrief = () => (
       heading="House"
       subheading="Lorem ipsum dolor sit amet"
     />
+
+    <div className="col-12 text-center">
+      <a className="h4 cta animated-arrow" href="#">
+        <span className="the-arrow -left">
+          <span className="shaft" />
+        </span>
+        <span className="main">
+          <span className="text">Zobacz więcej realizacji</span>
+        </span>
+      </a>
+    </div>
   </div>
 );
 
