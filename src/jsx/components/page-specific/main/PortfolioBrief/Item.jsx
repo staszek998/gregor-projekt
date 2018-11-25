@@ -22,9 +22,9 @@ class Item extends Component {
             </figcaption>
             <svg
               className="tilter__deco tilter__deco--lines"
-              viewBox="0 0 300 415"
+              viewBox="0 0 500 415"
             >
-              <path d="M20.5,20.5h260v375h-260V20.5z" />
+              <path d="M20.5,20.5h460v375h-460V20.5z" />
             </svg>
           </figure>
         </a>
