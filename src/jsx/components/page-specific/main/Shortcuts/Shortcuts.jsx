@@ -14,7 +14,7 @@ const Shortcuts = () => (
     <div className="col-6 col-md-4">
       <ArrowLink text="Napisz do nas" white={true} />
     </div>
-    <div className="col-12 col-md-4">
+    <div className="col-12 col-md-4 mt-4 mt-md-0">
       <ArrowLink text="Sprawdź ceny" white={true} />
     </div>
   </div>
