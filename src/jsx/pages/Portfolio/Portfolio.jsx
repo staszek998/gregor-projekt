@@ -21,12 +21,48 @@ const Portfolio = () => (
           <h1 className="display-1 mt-5 mb-4">Portfolio</h1>
         </div>
       </div>
-      <Case heading="Projekt domu" body={lorem} imgSrc={testImg1} />
-      <Case heading="Projekt domu" body={lorem} imgSrc={testImg2} dark={true} />
-      <Case heading="Projekt domu" body={lorem} imgSrc={testImg3} />
-      <Case heading="Projekt domu" body={lorem} imgSrc={testImg4} dark={true} />
-      <Case heading="Projekt domu" body={lorem} imgSrc={testImg5} />
-      <Case heading="Projekt domu" body={lorem} imgSrc={testImg6} dark={true} />
+      <Case
+        heading="Projekt domu"
+        body={lorem}
+        imgSrc={testImg1}
+        dark={false}
+        collapseId="collapse-1"
+      />
+      <Case
+        heading="Projekt domu"
+        body={lorem}
+        imgSrc={testImg2}
+        dark={true}
+        collapseId="collapse-2"
+      />
+      <Case
+        heading="Projekt domu"
+        body={lorem}
+        imgSrc={testImg3}
+        dark={false}
+        collapseId="collapse-3"
+      />
+      <Case
+        heading="Projekt domu"
+        body={lorem}
+        imgSrc={testImg4}
+        dark={true}
+        collapseId="collapse-4"
+      />
+      <Case
+        heading="Projekt domu"
+        body={lorem}
+        imgSrc={testImg5}
+        dark={false}
+        collapseId="collapse-5"
+      />
+      <Case
+        heading="Projekt domu"
+        body={lorem}
+        imgSrc={testImg6}
+        dark={true}
+        collapseId="collapse-6"
+      />
     </div>
   </main>
 );
