@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Media from "react-media";
 
 // Codrops' Tilt Hover Effect
 import "../../../../../vendor/tilter/css/pater.css";
@@ -20,12 +21,25 @@ class Item extends Component {
               <h3 className="tilter__title">{this.props.heading}</h3>
               <p className="tilter__description">{this.props.subheading}</p>
             </figcaption>
-            <svg
-              className="tilter__deco tilter__deco--lines"
-              viewBox="0 0 500 415"
-            >
-              <path d="M20.5,20.5h460v375h-460V20.5z" />
-            </svg>
+            <Media query={{ maxWidth: 991 }}>
+              {matches =>
+                matches ? (
+                  <svg
+                    className="tilter__deco tilter__deco--lines"
+                    viewBox="0 0 300 415"
+                  >
+                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                  </svg>
+                ) : (
+                  <svg
+                    className="tilter__deco tilter__deco--lines"
+                    viewBox="0 0 500 415"
+                  >
+                    <path d="M20.5,20.5h460v375h-460V20.5z" />
+                  </svg>
+                )
+              }
+            </Media>
           </figure>
         </a>
       </div>
