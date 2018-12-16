@@ -1,0 +1,133 @@
+@import "../../../../../scss/config/colors";
+
+.Case {
+  // Constants used for animating the arrow button
+  $easing: cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  $duration: 0.5s;
+
+  img {
+    width: 100%;
+  }
+
+  // Setting the colors based on the suffix of the .Case component
+  &.--light {
+    .bg {
+      background-color: white;
+
+      * {
+        color: $customBlack;
+      }
+    }
+
+    .left-bar::after {
+      background-color: $customBlack;
+    }
+    .right-bar::after {
+      background-color: $customBlack;
+    }
+  }
+
+  &.--dark {
+    .bg {
+      background-color: $customBlack;
+
+      * {
+        color: white;
+      }
+    }
+
+    .left-bar::after {
+      background-color: white;
+    }
+    .right-bar::after {
+      background-color: white;
+    }
+  }
+
+  // Change the order for the odd rows to achieve the chessboard-like construction
+  &:nth-child(odd) {
+    @media (min-width: 768px) {
+      .col-12 {
+        &.text-container {
+          order: 2;
+        }
+        &.image-container {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  // Styles for the animated arrow button
+  .arrow-icon {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+
+    .left-bar {
+      position: absolute;
+      background-color: transparent;
+      top: 50%;
+      right: 16px;
+      width: 30px;
+      height: 3px;
+      display: block;
+      transform: rotate(35deg);
+      float: right;
+      border-radius: 2px;
+
+      &:after {
+        content: "";
+        width: 30px;
+        height: 3px;
+        display: block;
+        float: right;
+        border-radius: 6px 10px 10px 6px;
+        transition: all $duration $easing;
+        z-index: -1;
+      }
+    }
+
+    .right-bar {
+      position: absolute;
+      background-color: transparent;
+      top: 50%;
+      left: 16px;
+      width: 30px;
+      height: 3px;
+      display: block;
+      transform: rotate(-35deg);
+      float: right;
+      border-radius: 2px;
+
+      &:after {
+        content: "";
+        width: 30px;
+        height: 3px;
+        display: block;
+        float: right;
+        border-radius: 10px 6px 6px 10px;
+        transition: all $duration $easing;
+        z-index: -1;
+      }
+    }
+
+    &.open {
+      .left-bar:after {
+        transform-origin: center center;
+        transform: rotate(-70deg);
+      }
+      .right-bar:after {
+        transform-origin: center center;
+        transform: rotate(70deg);
+      }
+    }
+  }
+}
