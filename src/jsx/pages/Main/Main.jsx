@@ -11,7 +11,7 @@ import PortfolioBrief from "../../components/page-specific/main/PortfolioBrief/P
 import Shortcuts from "../../components/page-specific/main/Shortcuts/Shortcuts";
 
 const Main = () => (
-  <main className="Main page--main">
+  <main className="Main">
     <div className="container">
       <div className="row">
         <div className="col px-0">
