@@ -19,7 +19,8 @@ class Case extends Component {
                 }`}
                 type="button"
                 data-toggle="collapse"
-                data-target={`#${this.props.collapseId}`}
+                href={`#${this.props.collapseId}`}
+                role="button"
                 aria-expanded="false"
                 aria-controls={this.props.collapseId}
                 onClick={() => {
@@ -37,14 +38,14 @@ class Case extends Component {
             </div>
           </div>
         </div>
-        <div className="collapse container" id={this.props.collapseId}>
+        <div className="container collapse" id={this.props.collapseId}>
           <div className="row">
-            <section className="col-12 col-md-6 py-3 px-md-1 text-center">
+            <section className="col-12 col-md-6 py-3 px-md-3 text-center">
               <img src={this.props.section1.imgSrc} alt="" />
               <h3 className="mt-3">{this.props.section1.heading}</h3>
               <p>{this.props.section1.body}</p>
             </section>
-            <section className="col-12 col-md-6 py-3 px-md-1 text-center">
+            <section className="col-12 col-md-6 py-3 px-md-3 text-center">
               <img src={this.props.section2.imgSrc} alt="" />
               <h3 className="mt-3">{this.props.section2.heading}</h3>
               <p>{this.props.section2.body}</p>
