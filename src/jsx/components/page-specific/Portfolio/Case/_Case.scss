@@ -1,6 +1,7 @@
 @import "../../../../../scss/config/colors";
 
 .Case {
+  // Constants used for animating the arrow button
   $easing: cubic-bezier(0.25, 1.7, 0.35, 0.8);
   $duration: 0.5s;
 
@@ -8,6 +9,7 @@
     width: 100%;
   }
 
+  // Setting the colors based on the suffix of the .Case component
   &.--light {
     .bg {
       background-color: white;
@@ -42,6 +44,7 @@
     }
   }
 
+  // Change the order for the odd rows to achieve the chessboard-like construction
   &:nth-child(odd) {
     @media (min-width: 768px) {
       .col-12 {
@@ -55,6 +58,7 @@
     }
   }
 
+  // Styles for the animated arrow button
   .arrow-icon {
     display: block;
     position: relative;
@@ -126,18 +130,4 @@
       }
     }
   }
-
-  // &__details {
-  //   transition: all 500ms ease;
-
-  //   // Hidden state
-  //   max-height: 0;
-  //   visibility: hidden;
-
-  //   // After clicking the arrow button
-  //   &.visible {
-  //     max-height: 1000px;
-  //     visibility: visible;
-  //   }
-  // }
 }
