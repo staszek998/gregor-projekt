@@ -9,8 +9,8 @@ import testImg3 from "../../../assets/images/page-specific/Portfolio/houses/hous
 import testImg4 from "../../../assets/images/page-specific/Portfolio/houses/house-4.jpg";
 import testImg5 from "../../../assets/images/page-specific/Portfolio/houses/house-5.jpg";
 import testImg6 from "../../../assets/images/page-specific/Portfolio/houses/house-6.jpg";
-import plan from "../../../assets/images/page-specific/Portfolio/test-collapse/plan.jpg";
-import interior from "../../../assets/images/page-specific/Portfolio/test-collapse/interior.jpg";
+import plan from "../../../assets/images/page-specific/Portfolio/test-collapse/plan.png";
+import interior from "../../../assets/images/page-specific/Portfolio/test-collapse/interior.png";
 
 const lorem =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet assumenda explicabo molestiae obcaecati aliquid eaque aut exercitationem ratione quae iste. Voluptates, voluptate culpa! Odio assumenda ratione culpa, numquam nesciunt quae?";
