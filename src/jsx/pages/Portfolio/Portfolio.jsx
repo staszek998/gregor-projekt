@@ -49,8 +49,8 @@ const Portfolio = () => (
         imgSrc={testImg1}
         dark={false}
         collapseId="collapse-1"
-        section1={{ ...testCollapseContent.section1 }}
-        section2={{ ...testCollapseContent.section2 }}
+        collapseSection1={{ ...testCollapseContent.section1 }}
+        collapseSection2={{ ...testCollapseContent.section2 }}
       />
       <Case
         heading="Projekt domu"
@@ -58,8 +58,8 @@ const Portfolio = () => (
         imgSrc={testImg2}
         dark={true}
         collapseId="collapse-2"
-        section1={{ ...testCollapseContent.section1 }}
-        section2={{ ...testCollapseContent.section2 }}
+        collapseSection1={{ ...testCollapseContent.section1 }}
+        collapseSection2={{ ...testCollapseContent.section2 }}
       />
       <Case
         heading="Projekt domu"
@@ -67,8 +67,8 @@ const Portfolio = () => (
         imgSrc={testImg3}
         dark={false}
         collapseId="collapse-3"
-        section1={{ ...testCollapseContent.section1 }}
-        section2={{ ...testCollapseContent.section2 }}
+        collapseSection1={{ ...testCollapseContent.section1 }}
+        collapseSection2={{ ...testCollapseContent.section2 }}
       />
       <Case
         heading="Projekt domu"
@@ -76,8 +76,8 @@ const Portfolio = () => (
         imgSrc={testImg4}
         dark={true}
         collapseId="collapse-4"
-        section1={{ ...testCollapseContent.section1 }}
-        section2={{ ...testCollapseContent.section2 }}
+        collapseSection1={{ ...testCollapseContent.section1 }}
+        collapseSection2={{ ...testCollapseContent.section2 }}
       />
       <Case
         heading="Projekt domu"
@@ -85,8 +85,8 @@ const Portfolio = () => (
         imgSrc={testImg5}
         dark={false}
         collapseId="collapse-5"
-        section1={{ ...testCollapseContent.section1 }}
-        section2={{ ...testCollapseContent.section2 }}
+        collapseSection1={{ ...testCollapseContent.section1 }}
+        collapseSection2={{ ...testCollapseContent.section2 }}
       />
       <Case
         heading="Projekt domu"
@@ -94,8 +94,8 @@ const Portfolio = () => (
         imgSrc={testImg6}
         dark={true}
         collapseId="collapse-6"
-        section1={{ ...testCollapseContent.section1 }}
-        section2={{ ...testCollapseContent.section2 }}
+        collapseSection1={{ ...testCollapseContent.section1 }}
+        collapseSection2={{ ...testCollapseContent.section2 }}
       />
     </div>
   </main>

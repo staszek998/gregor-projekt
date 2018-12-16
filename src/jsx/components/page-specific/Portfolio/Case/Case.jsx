@@ -1,9 +1,20 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import "./_Case.scss";
 
 class Case extends Component {
-  state = { collapsed: true };
+  state = { collapsed: true }; // This property will be used to handle the arrow button change
+
+  propTypes = {
+    dark: PropTypes.bool,
+    heading: PropTypes.string,
+    body: PropTypes.string,
+    imgSrc: PropTypes.string,
+    collapseId: PropTypes.string,
+    collapseSection1: PropTypes.object,
+    collapseSection2: PropTypes.object
+  };
 
   render() {
     return (
@@ -41,14 +52,14 @@ class Case extends Component {
         <div className="container collapse" id={this.props.collapseId}>
           <div className="row">
             <section className="col-12 col-md-6 py-3 px-md-3 text-center">
-              <img src={this.props.section1.imgSrc} alt="" />
-              <h3 className="mt-3">{this.props.section1.heading}</h3>
-              <p>{this.props.section1.body}</p>
+              <img src={this.props.collapseSection1.imgSrc} alt="" />
+              <h3 className="mt-3">{this.props.collapseSection1.heading}</h3>
+              <p>{this.props.collapseSection1.body}</p>
             </section>
             <section className="col-12 col-md-6 py-3 px-md-3 text-center">
-              <img src={this.props.section2.imgSrc} alt="" />
-              <h3 className="mt-3">{this.props.section2.heading}</h3>
-              <p>{this.props.section2.body}</p>
+              <img src={this.props.collapseSection2.imgSrc} alt="" />
+              <h3 className="mt-3">{this.props.collapseSection2.heading}</h3>
+              <p>{this.props.collapseSection2.body}</p>
             </section>
           </div>
         </div>
