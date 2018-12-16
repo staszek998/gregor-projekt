@@ -21,6 +21,7 @@ const History = () => (
       </div>
     </div>
 
+    {/* 1st section */}
     <section className="History__1 row bg-white justify-content-center">
       <div className="col-12 col-md-10 py-5 text-center">
         <h2>Projektujemy z pasji</h2>
@@ -53,12 +54,14 @@ const History = () => (
       </div>
     </section>
 
+    {/* 1st image divider */}
     <section className="History__2 row">
       <div className="col-12 p-0">
         <img src={img1} alt="" />
       </div>
     </section>
 
+    {/* 2nd section */}
     <section className="History__3 row bg-white justify-content-center">
       <div className="col-12 col-md-10 text-center py-5">
         <h2>Projektujemy dla Ciebie</h2>
@@ -103,12 +106,14 @@ const History = () => (
       </div>
     </section>
 
+    {/* 2nd image divider */}
     <section className="History__4 row">
       <div className="col-12 p-0">
         <img src={img2} alt="" />
       </div>
     </section>
 
+    {/* 3rd section */}
     <section className="History__5 row bg-white justify-content-center">
       <div className="col-12 col-md-10 text-center py-5">
         <h2>Nie boimy się wyzwań</h2>
@@ -150,6 +155,7 @@ const History = () => (
       </div>
     </section>
 
+    {/* 3rd image divider */}
     <section className="History__6 row">
       <div className="col-12 p-0">
         <img src={img3} alt="" />
