@@ -1,0 +1,80 @@
+@import "../../../scss/config/colors";
+
+.History {
+  margin-bottom: 300px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .bg-dark {
+    background-color: $customBlack;
+
+    * {
+      color: white;
+    }
+  }
+
+  .bg-custombrown {
+    background-color: $customBrown;
+
+    * {
+      color: white;
+    }
+  }
+
+  .History__2,
+  .History__4,
+  .History__6 {
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  .History__3 {
+    .testimonial {
+      &__image {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  .History__5 {
+    .tilter {
+      width: 100%;
+      margin: 0;
+
+      .tilter__image {
+        object-fit: cover;
+        object-position: center;
+      }
+
+      figcaption {
+        * {
+          color: white;
+          font-family: "Quicksand";
+          text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+            0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  .History__6 {
+    img {
+      height: 600px;
+      object-position: center;
+    }
+  }
+
+  > section:last-child {
+    box-shadow: 0 14px 22px 0px gray;
+  }
+}

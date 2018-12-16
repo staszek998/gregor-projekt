@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./_PortfolioBrief.scss";
-import Item from "./Item";
+import Tilter from "../../../shared/Tilter";
 import ArrowLink from "../../../shared/ArrowLink/ArrowLink";
 
 import img1 from "../../../../../assets/images/page-specific/main/portfolio-brief/house-1.jpg";
@@ -15,22 +15,22 @@ const PortfolioBrief = () => (
       <h2 className="h1 text-center my-5">Zobacz, co już zbudowaliśmy</h2>
     </div>
 
-    <Item
+    <Tilter
       imgSrc={img1}
       heading="House"
       subheading="Lorem ipsum dolor sit amet"
     />
-    <Item
+    <Tilter
       imgSrc={img2}
       heading="House"
       subheading="Lorem ipsum dolor sit amet"
     />
-    <Item
+    <Tilter
       imgSrc={img3}
       heading="House"
       subheading="Lorem ipsum dolor sit amet"
     />
-    <Item
+    <Tilter
       imgSrc={img4}
       heading="House"
       subheading="Lorem ipsum dolor sit amet"
