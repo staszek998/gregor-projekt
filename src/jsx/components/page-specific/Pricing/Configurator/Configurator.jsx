@@ -4,14 +4,40 @@ import "./_Configurator.scss";
 
 class Configurator extends Component {
   state = {
-    currentPrice: 0,
+    currentPrice: () => {
+      let sum = 0;
+      Object.keys(this.state.services).forEach((service, index) => {
+        if (this.state.services[service].selected) {
+          sum += this.state.services[service].price;
+        }
+      });
+      return sum;
+    },
     services: {
-      architecture: false,
-      construction: false,
-      electricity: false,
-      supervision: false,
-      estimation: false,
-      coffee: true
+      architecture: {
+        selected: false,
+        price: 1000
+      },
+      construction: {
+        selected: false,
+        price: 2000
+      },
+      electricity: {
+        selected: false,
+        price: 500
+      },
+      supervision: {
+        selected: false,
+        price: 1000
+      },
+      estimation: {
+        selected: false,
+        price: 300
+      },
+      coffee: {
+        selected: true,
+        price: 0
+      }
     }
   };
 
@@ -30,12 +56,15 @@ class Configurator extends Component {
                   <input
                     type="checkbox"
                     id="architecture"
-                    checked={this.state.services.architecture}
+                    checked={this.state.services.architecture.selected}
                     onChange={() => {
                       this.setState({
                         services: {
                           ...this.state.services,
-                          architecture: !this.state.services.architecture
+                          architecture: {
+                            ...this.state.services.architecture,
+                            selected: !this.state.services.architecture.selected
+                          }
                         }
                       });
                     }}
@@ -52,12 +81,15 @@ class Configurator extends Component {
                   <input
                     type="checkbox"
                     id="construction"
-                    checked={this.state.services.construction}
+                    checked={this.state.services.construction.selected}
                     onChange={() => {
                       this.setState({
                         services: {
                           ...this.state.services,
-                          construction: !this.state.services.construction
+                          construction: {
+                            ...this.state.services.construction,
+                            selected: !this.state.services.construction.selected
+                          }
                         }
                       });
                     }}
@@ -74,12 +106,15 @@ class Configurator extends Component {
                   <input
                     type="checkbox"
                     id="electricity"
-                    checked={this.state.services.electricity}
+                    checked={this.state.services.electricity.selected}
                     onChange={() => {
                       this.setState({
                         services: {
                           ...this.state.services,
-                          electricity: !this.state.services.electricity
+                          electricity: {
+                            ...this.state.services.electricity,
+                            selected: !this.state.services.electricity.selected
+                          }
                         }
                       });
                     }}
@@ -96,12 +131,15 @@ class Configurator extends Component {
                   <input
                     type="checkbox"
                     id="supervision"
-                    checked={this.state.services.supervision}
+                    checked={this.state.services.supervision.selected}
                     onChange={() => {
                       this.setState({
                         services: {
                           ...this.state.services,
-                          supervision: !this.state.services.supervision
+                          supervision: {
+                            ...this.state.services.supervision,
+                            selected: !this.state.services.supervision.selected
+                          }
                         }
                       });
                     }}
@@ -118,12 +156,15 @@ class Configurator extends Component {
                   <input
                     type="checkbox"
                     id="estimation"
-                    checked={this.state.services.estimation}
+                    checked={this.state.services.estimation.selected}
                     onChange={() => {
                       this.setState({
                         services: {
                           ...this.state.services,
-                          estimation: !this.state.services.estimation
+                          estimation: {
+                            ...this.state.services.estimation,
+                            selected: !this.state.services.estimation.selected
+                          }
                         }
                       });
                     }}
@@ -140,12 +181,15 @@ class Configurator extends Component {
                   <input
                     type="checkbox"
                     id="coffee"
-                    checked={this.state.services.coffee}
+                    checked={this.state.services.coffee.selected}
                     onChange={() => {
                       this.setState({
                         services: {
                           ...this.state.services,
-                          coffee: !this.state.services.coffee
+                          coffee: {
+                            ...this.state.services.coffee,
+                            selected: !this.state.services.coffee.selected
+                          }
                         }
                       });
                     }}
@@ -159,7 +203,7 @@ class Configurator extends Component {
         <div className="rough-sum col-12 col-md-4 text-center">
           <h3 className="mb-4">Cena orientacyjna</h3>
           <p className="display-1">
-            {this.state.currentPrice}
+            {this.state.currentPrice()}
             <span className="display-4">zł</span>
           </p>
         </div>
