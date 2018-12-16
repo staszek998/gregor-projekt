@@ -1,5 +1,18 @@
-@import '../../../scss/config/colors';
+@import "../../../scss/config/colors";
 
 .Pricing {
-    
+  margin-bottom: 300px;
+
+  .bg-dark {
+    background-color: $customBlack;
+    color: white;
+
+    * {
+      color: white;
+    }
+  }
+
+  > .row:last-child {
+    box-shadow: 0 14px 22px 0px gray;
+  }
 }

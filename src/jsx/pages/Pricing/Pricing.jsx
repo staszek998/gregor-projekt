@@ -1,5 +1,8 @@
 import React from "react";
 
+import "./_Pricing.scss";
+import Configurator from "../../components/page-specific/Pricing/Configurator/Configurator";
+
 const Pricing = () => (
   <main className="Pricing container">
     {/* Heading */}
@@ -10,12 +13,12 @@ const Pricing = () => (
     </div>
 
     <div className="row bg-white py-5">
-      <div className="col-12">
-        <h2 className="text-center">Profesjonalizm na każdą kieszeń</h2>
+      <div className="col-12 text-center">
+        <h2>Konfigurator udanego projektu</h2>
       </div>
-      <div className="col-12 col-md-8">configurator</div>
-      <div className="col-12 col-md-4">price sum</div>
     </div>
+
+    <Configurator />
   </main>
 );
 
