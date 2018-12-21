@@ -9,6 +9,7 @@ import Main from "./jsx/pages/Main/Main";
 import Portfolio from "./jsx/pages/Portfolio/Portfolio";
 import History from "./jsx/pages/History/History";
 import Pricing from "./jsx/pages/Pricing/Pricing";
+import Contact from "./jsx/pages/Contact/Contact";
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
             <Route path="/portfolio" exact component={Portfolio} />
             <Route path="/historia" exact component={History} />
             <Route path="/cennik" exact component={Pricing} />
+            <Route path="/kontakt" exact component={Contact} />
           </Switch>
 
           <Footer />
