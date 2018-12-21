@@ -8,6 +8,7 @@ import Footer from "./jsx/components/shared/Footer/Footer";
 import Main from "./jsx/pages/Main/Main";
 import Portfolio from "./jsx/pages/Portfolio/Portfolio";
 import History from "./jsx/pages/History/History";
+import Pricing from "./jsx/pages/Pricing/Pricing";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/" exact component={Main} />
             <Route path="/portfolio" exact component={Portfolio} />
             <Route path="/historia" exact component={History} />
+            <Route path="/cennik" exact component={Pricing} />
           </Switch>
 
           <Footer />
