@@ -19,6 +19,22 @@ const Pricing = () => (
     </div>
 
     <Configurator />
+
+    <div className="row bg-white py-5 justify-content-center">
+      <div className="col-12 col-md-10">
+        <p className="lead text-center">
+          Pamiętaj, że są to jedynie oscylacyjne ceny. Oznacza to, że faktyczny
+          koszt zlecenia będzie inny. Staramy się jednak, aby podane wyżej ceny
+          były przynajmniej uśrednione i dawały jak najlepszy pogląd na realne
+          koszty zlecenia.
+        </p>
+        <p className="lead text-center">
+          Zachęcamy do bezpośredniego kontaktu z nami, celem przeprowadzenia
+          indywidualnej kalkulacji. W ten sposób będziemy mogli przygotować dla
+          Państwa jednostkowy mini-kosztorys, zupełnie <b>za darmo :)</b>
+        </p>
+      </div>
+    </div>
   </main>
 );
 
