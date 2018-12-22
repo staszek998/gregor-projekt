@@ -27,7 +27,7 @@ const Modal = ({ header, body, footer }) => (
         </div>
 
         {/* Body */}
-        <div className="modal-body">{body}</div>
+        {body}
 
         {/* Footer */}
         {footer ? <div className="modal-footer">{footer}</div> : null}

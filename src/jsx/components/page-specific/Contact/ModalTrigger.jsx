@@ -1,12 +1,20 @@
 import React from "react";
+import $ from "jquery";
 
-const ModalTrigger = ({ modalId, text, white }) => (
+const ModalTrigger = ({ modalId, text, white, onClick }) => (
   <button
     className={`ModalTrigger ArrowLink h4 animated-arrow ${
       white ? "white" : ""
     }`}
     data-toggle="modal"
     data-target={`#${modalId}`}
+    onClick={() => {
+      // Manually roggle the modal
+      $(`#${modalId}`).modal("show");
+
+      // Change the active part which defines the modal contents
+      onClick(text);
+    }}
   >
     <span className="the-arrow -left">
       <span className="shaft" />
