@@ -9,9 +9,6 @@ const ModalTrigger = ({ modalId, text, white, onClick }) => (
     data-toggle="modal"
     data-target={`#${modalId}`}
     onClick={() => {
-      // Manually roggle the modal
-      $(`#${modalId}`).modal("show");
-
       // Change the active part which defines the modal contents
       onClick(text);
     }}
