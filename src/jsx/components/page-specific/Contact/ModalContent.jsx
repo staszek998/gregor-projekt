@@ -60,7 +60,49 @@ const modalContent = {
     )
   },
   mail: {
-    header: `Napiszę mail'a`
+    header: `Napiszę mail'a`,
+    body: (
+      <div className="modal-body modal-body--mail">
+        <p className="lead text-center">
+          Proponujemy dwie formy kontaktu mail'owego:
+        </p>
+        <div className="row justify-content-around">
+          <div className="col-5 my-4 d-flex flex-column justify-content-center align-items-center">
+            <button
+              className="d-flex flex-column justify-content-between align-items-center text-center"
+              data-toggle="collapse"
+              data-target="#page--contact__modal--mail__collapse"
+              aria-expanded="false"
+              aria-controls="page--contact__modal--mail__collapse"
+            >
+              <i className="fas fa-file-signature mb-3" />
+              <span>Otwórz formularz</span>
+            </button>
+          </div>
+          <div className="col-5 my-4 d-flex flex-column justify-content-center align-items-center">
+            <a
+              href="mailto:gregorprojekt@gmail.com"
+              className="d-flex flex-column justify-content-between align-items-center text-center"
+            >
+              <i className="fas fa-envelope-open-text mb-3" />
+              <span>Napisz wiadomość samodzielnie</span>
+            </a>
+          </div>
+        </div>
+        <div className="collapse" id="page--contact__modal--mail__collapse">
+          <div className="row">
+            <form className="col-12">test</form>
+          </div>
+        </div>
+      </div>
+    ),
+    footer: (
+      <div className="modal-footer d-flex justify-content-start align-items-center">
+        <button className="btn btn-secondary" data-dismiss="modal">
+          Zamknij okno
+        </button>
+      </div>
+    )
   }
 };
 
