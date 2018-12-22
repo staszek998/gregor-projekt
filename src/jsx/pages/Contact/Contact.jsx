@@ -1,5 +1,7 @@
 import React from "react";
 import "./_Contact.scss";
+import Modal from "../../components/page-specific/Contact/Modal";
+import ModalTrigger from "../../components/page-specific/Contact/ModalTrigger";
 import ArrowLink from "../../components/shared/ArrowLink/ArrowLink";
 
 const Contact = () => (
@@ -18,13 +20,16 @@ const Contact = () => (
       </div>
 
       <div className="col-12 col-md-4">
-        <ArrowLink text="Wpadnę do biura" href="#" />
+        <ModalTrigger text="Wpadnę do biura" modalId="page--contact__modal" />
       </div>
       <div className="col-12 col-md-4">
-        <ArrowLink text="Porozmawiajmy przez telefon" href="#" />
+        <ModalTrigger
+          text="Porozmawiajmy przez telefon"
+          modalId="page--contact__modal"
+        />
       </div>
       <div className="col-12 col-md-4">
-        <ArrowLink text="Napiszę mail'a" href="#" />
+        <ModalTrigger text="Napiszę mail'a" modalId="page--contact__modal" />
       </div>
     </div>
 
@@ -37,6 +42,8 @@ const Contact = () => (
         <ArrowLink text="Obejrzyj nasze projekty" href="#" white={true} />
       </div>
     </div>
+
+    <Modal />
   </main>
 );
 

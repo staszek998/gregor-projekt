@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modal = () => (
+const Modal = ({ header, body, footer }) => (
   <div
     className="modal fade"
     id="page--contact__modal"
