@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./_Contact.scss";
 import Modal from "../../components/page-specific/Contact/Modal";
 import ModalTrigger from "../../components/page-specific/Contact/ModalTrigger";
