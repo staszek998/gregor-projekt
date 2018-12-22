@@ -9,3 +9,14 @@
     }
   }
 }
+
+.ModalTrigger {
+  &,
+  &:active,
+  &:focus {
+    background: transparent;
+    border: none;
+    outline: none;
+    appearance: none;
+  }
+}
