@@ -1,11 +1,54 @@
 .Contact {
   .quick-links {
-    // Make space between the 1st row and the cuick links
+    // Make space between the 1st row and the quick links
     margin-top: 70px;
 
     // Change the links' inner text color
     a span {
       color: white;
     }
+  }
+
+  .modal {
+    // Fix overflowing modal
+    max-width: 100vw;
+
+    .modal-body {
+      &--mail {
+        // Clear base styles
+        button,
+        a {
+          appearance: none;
+          border: none;
+          outline: none;
+          background: transparent;
+          margin: 0 auto;
+          text-decoration: none;
+
+          // Make the icons larger
+          i {
+            font-size: 50px;
+          }
+
+          // Add funky glow on hover
+          transition: all 200ms ease;
+          &:hover {
+            text-shadow: 0 0 10px #007bff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ModalTrigger {
+  // Remove the blue glow (Bootstrap styles)
+  &,
+  &:active,
+  &:focus {
+    background: transparent;
+    border: none;
+    outline: none;
+    appearance: none;
   }
 }

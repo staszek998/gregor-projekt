@@ -1,11 +1,11 @@
 import React from "react";
 
-const Modal = () => (
+const Modal = ({ header, body, footer }) => (
   <div
     className="modal fade"
     id="page--contact__modal"
     aria-labelledby="page--contact__modal__label"
-    tabindex="-1"
+    tabIndex="-1"
     role="dialog"
     aria-hidden="true"
   >
@@ -27,10 +27,10 @@ const Modal = () => (
         </div>
 
         {/* Body */}
-        <div className="modal-body">{body}</div>
+        {body}
 
         {/* Footer */}
-        {footer ? <div className="modal-footer">{footer}</div> : null}
+        {footer}
       </div>
     </div>
   </div>
