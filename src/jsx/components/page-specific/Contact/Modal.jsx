@@ -5,7 +5,7 @@ const Modal = ({ header, body, footer }) => (
     className="modal fade"
     id="page--contact__modal"
     aria-labelledby="page--contact__modal__label"
-    tabindex="-1"
+    tabIndex="-1"
     role="dialog"
     aria-hidden="true"
   >

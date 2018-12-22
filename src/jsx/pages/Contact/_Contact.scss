@@ -11,6 +11,7 @@
 }
 
 .ModalTrigger {
+  // Remove the blue glow (Bootstrap styles)
   &,
   &:active,
   &:focus {
