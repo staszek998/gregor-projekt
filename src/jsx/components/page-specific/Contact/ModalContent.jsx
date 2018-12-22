@@ -67,7 +67,7 @@ const modalContent = {
           Proponujemy dwie formy kontaktu mail'owego:
         </p>
         <div className="row justify-content-around">
-          <div className="col-5 my-4 d-flex flex-column justify-content-center align-items-center">
+          <div className="col-5 my-4 d-flex flex-column justify-content-start align-items-center">
             <button
               className="d-flex flex-column justify-content-between align-items-center text-center"
               data-toggle="collapse"
@@ -79,7 +79,7 @@ const modalContent = {
               <span>Otwórz formularz</span>
             </button>
           </div>
-          <div className="col-5 my-4 d-flex flex-column justify-content-center align-items-center">
+          <div className="col-5 my-4 d-flex flex-column justify-content-start align-items-center">
             <a
               href="mailto:gregorprojekt@gmail.com"
               className="d-flex flex-column justify-content-between align-items-center text-center"
@@ -91,7 +91,67 @@ const modalContent = {
         </div>
         <div className="collapse" id="page--contact__modal--mail__collapse">
           <div className="row">
-            <form className="col-12">test</form>
+            <form
+              className="col-12 form"
+              onSubmit={event => {
+                event.preventDefault();
+              }}
+            >
+              <div className="row">
+                <div className="col-12 col-md-6">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    placeholder="Imię *"
+                    className="form-control mb-3"
+                  />
+                </div>
+                <div className="col-12 col-md-6">
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    placeholder="Nazwisko *"
+                    className="form-control mb-3"
+                  />
+                </div>
+                <div className="col-12 col-md-6">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Twój adres e-mail *"
+                    className="form-control mb-3"
+                  />
+                </div>
+                <div className="col-12 col-md-6">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Twój nr telefonu"
+                    className="form-control mb-3"
+                  />
+                </div>
+                <div className="col-12">
+                  <textarea
+                    className="form-control mb-3"
+                    name="message"
+                    id="message"
+                    rows="10"
+                    placeholder="Treść Twojej wiadomości *"
+                  />
+                </div>
+                <div className="col-12 text-center">
+                  <input
+                    type="submit"
+                    value="Wyślij"
+                    className="form-control btn btn-success mb-3"
+                  />
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
