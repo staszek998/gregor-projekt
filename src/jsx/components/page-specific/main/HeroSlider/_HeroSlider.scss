@@ -1,0 +1,42 @@
+@import "../../../../../scss/config/colors";
+
+#hero-slider {
+  height: 300px;
+
+  @media (min-width: 768px) {
+    height: 400px;
+  }
+
+  @media (min-width: 992px) {
+    height: 500px;
+  }
+
+  .carousel-inner {
+    height: 100%;
+
+    .carousel-item {
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .carousel-caption {
+        background-color: rgba($color: $customBlack, $alpha: 0.8);
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        * {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}

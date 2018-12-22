@@ -1,0 +1,26 @@
+@import "./config/colors";
+
+html,
+body {
+  background-color: $customWhite;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 0.7rem;
+
+  @media (min-width: 768px) {
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 1rem;
+  }
+}
+
+* {
+  color: $customBlack;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
