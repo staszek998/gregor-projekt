@@ -3,7 +3,7 @@ import $ from "jquery";
 
 const ModalTrigger = ({ modalId, text, white, onClick }) => (
   <button
-    className={`ModalTrigger ArrowLink h4 animated-arrow ${
+    className={`ModalTrigger ArrowLink h4 mb-3 mb-md-0 animated-arrow ${
       white ? "white" : ""
     }`}
     data-toggle="modal"
