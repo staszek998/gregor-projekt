@@ -1,5 +1,6 @@
 {
   "name": "gregor-projekt",
+  "homepage": "https://staszek998.github.io/gregor-projekt",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
