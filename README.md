@@ -1,6 +1,7 @@
 # GREGOR PROJEKT
 
 This project has been developed as an example on how the website [gregorprojekt.com](http://gregorprojekt.com/) could be improved, as well as to improve my front-end programming skills within HTML, CSS, JS and the _React_ framework. There was no design for this project - the website's GUI is an effect of my heroic efforts to make it look at least not unsightly ;)
+
 There was only taken a slight inspiration from the current website look.
 
 ## Getting started
